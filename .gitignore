@@ -1,0 +1,12 @@
+/node_modules
+/dist
+/.tmp
+/.sass-cache
+/bower_components
+*.suo
+CDC_Obesity_App/src/CDC_Obesity_App/project.lock.json
+CDC_Obesity_App/.vs
+Team Deliverable 2/Technical Presentation - Team-Too.mp4
+Team Deliverable 2/Technical Presentation - Team-Too.pdf
+Team Deliverable 3/
+child_bmi_thesholds.xlsx
