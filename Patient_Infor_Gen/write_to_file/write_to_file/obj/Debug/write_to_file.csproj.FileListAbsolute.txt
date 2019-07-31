@@ -1,0 +1,6 @@
+c:\users\carrot\documents\visual studio 2015\Projects\write_to_file\write_to_file\bin\Debug\write_to_file.exe.config
+c:\users\carrot\documents\visual studio 2015\Projects\write_to_file\write_to_file\bin\Debug\write_to_file.exe
+c:\users\carrot\documents\visual studio 2015\Projects\write_to_file\write_to_file\bin\Debug\write_to_file.pdb
+c:\users\carrot\documents\visual studio 2015\Projects\write_to_file\write_to_file\obj\Debug\write_to_file.csprojResolveAssemblyReference.cache
+c:\users\carrot\documents\visual studio 2015\Projects\write_to_file\write_to_file\obj\Debug\write_to_file.exe
+c:\users\carrot\documents\visual studio 2015\Projects\write_to_file\write_to_file\obj\Debug\write_to_file.pdb

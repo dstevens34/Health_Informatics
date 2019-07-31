@@ -1,0 +1,382 @@
+Daniel and team
+
+There are some aging questions and discussion on Slack regarding
+interface specifications and inter-app communication.
+Most of the substantive points were made Feb 21/22 ( I excepted the
+sections below)
+
+Substantively, one ask is for the AnalyticsTeam to produce a document
+of what we want to get on the 3 interfaces,  patient --> analytic,
+physician --> analytic, and community --> analytic, what  information
+flows you need in terms of FHIR fields.   The interface specification
+should show the information flows from patient app --> physician
+app--> community app,  and how all three send data to the analytics
+app.
+
+A functional test harness has been proposed that simulates the 4 apps
+in stub form but fully implements the interfaces and  data exchanges
+between the apps would be very useful as each team could periodically
+during development insert their real app into the test harness and
+ensure it still is going to interoperate with the others.
+
+Also proposed is use of a common library of data accessors to the FHIR
+with a test harness included with the library that has dummy apps
+sending, receiving data or collecting stats.
+
+Any thoughts on moving forward with this proposal or the threads below?
+
+Also, has anyone peeked at the content of:
+https://github.gatech.edu/cdchealthyweight  recently?
+
+Thanks
+
+Kirk
+
+Slack excerpts below:
+
+Feb 21st
+
+jbarron30
+
+11:47 AM Hi Daniel. I am from physician facing app and Mark from
+community facing app are having a discussion on an interface
+specification for how all 4 apps transmit data to one another through
+the FHIR server and EHR. In the case of the analytics app you would be
+running in silent monitor mode on all the interfaces the other apps
+use to communicate. We would install on all these interfaces
+statistics collectors that your app needs to produce the analytics on
+the data flows between the other three apps.  We proposed to form a
+super-team from all four groups to create an interface specification
+document and a test harness which would include the 4 apps as stub
+dummy with only their interfaces implemented and the test harness
+could ensure data flows between the apps.  This would greatly de-risk
+the project as a whole.   Could you join our discussion on the
+#general thread and let us know your thoughts?
+
+mark
+
+4:01 AM @everyone I think we need to agree a priority question namely
+written communication methods. I think we need to try to resolve it in
+time for the impending assignment so that our presentations suit what
+we're going to create. This may not affect dashboard analytics
+particularly though Basically the provider needs to communicate with
+the patient, the provider needs to send referrals to the coordinator,
+the coordinator needs to reach the patient & parent; as I see it the
+fact that HIPAA is applicable pretty much limits the communications to
+FHIR server-based secure messages or Direct secure Emails.Either way,
+all 3 (sub-) apps are going to need a suitable interface, particularly
+in case of the more 'custom' FHIR server based secure messaging
+
+jbarron30
+
+10:32
+
+The patient facing team should create a document describing exactly
+how they will encode their information into the FHIR format in the EHR
+so the provider facing app team can design our code to this interface.
+(edited)
+
+10:38 AM The physician facing app should similarly create a document
+describing exactly how they will encode their information into the
+FHIR format in the EHR so the community facing app team can design
+thier code to this interface.
+
+10:42 Once these interfaces have been specified and implemented we can
+set up as early as possible a test harness with three dummy apps, ie a
+dummy patient app, a dummy physician app, and a dummy community app.
+The only things these dummy apps should implement is the interfaces
+and the test harness can test if information can flow from one app to
+another to another correctly.
+
+10:44 AM We can collaborate as a system-wide inter-app team to create
+one code base of commonly shared data accessor and parser functions so
+each team is not reinventing the wheel.
+
+
+
+mark
+
+10:46 AM The only question wrt the EHR, is whether it's going to
+reside on the FHIR server, basically as FHIR data, rather than being
+an independent 'document' that needs transferring from actor to actor,
+as transferrring an EHR as a document would need a secure comms
+channel, compared to transferring a link to a FHIR server URL, that
+would allow the FHIR server to handle granularity of authorization
+permissions, security, authentication, etcetera (edited)
+
+jbarron30
+
+10:46 AM The fourth app, analytics, would probably have all the hooks
+for all the interfaces, as it will need to be monitoring all the data
+exchanges I assume.
+
+mark
+
+10:51 AM I agree; I think we need to hear from #patient-facing whether
+we are all thinking similarly now
+10:53
+
+Then we may need 2 levels of specification; one for the content of
+written communications, basically unencrypted Emails, that could be
+global for all teams; then one per specific communication type, to
+specify how, with the help of FHIR, we're going to provide the actual
+detail
+
+
+
+jbarron30
+
+10:54 AM I think once we get this interface you proposed at 5 AM this
+morning designed and implemented in a test harness with three dummy
+apps injecting and extracting data seamlessly and analytics app being
+able to gather all the statistics it needs to track the information
+flows, the rest of the project for all 4 individual teams  becomes
+much less risky and  easier to implement.
+
+10:57
+
+Will the apps communicate by email? I thought the emails are sent to
+outside agencies.
+
+10:59
+
+What about team #analytics-reporting ?  We need to hear from them too.
+Can we nail down this interface as a multi-team?
+
+
+
+jbarron30
+
+11:05 AM Emails can be left for later. I like your proposal that the
+apps communicate among themselves through FHIR.
+
+11:08
+
+Let us just start with your app and our app, and let
+#analytics-reporting and #patient-facing join in later.  Can we set up
+a github  and create a little toy example of two stub apps sending
+data back and forth over a FHIR server?
+
+
+
+arkaaito
+
+11:21 AM @mark: yes, we're thinking of everything in FHIR as well.
+@jbarron30, I like the idea of sharing the FHIR in/out code although
+it will depend on whether we all end up on the same stack.
+
+11:23
+
+For receiving community resources we're planning to use push
+notifications, though we might also allow people to enter an e-mail -
+not too sure about that yet.
+
+11:24
+
+I think for #patient-facing the major issue for defining how our data
+will go into FHIR is that we're still waiting to hear back from them
+about whether the Questionnaire resource and related resources can be
+added to the GT FHIR server.
+
+
+
+jbarron30
+
+12:00 PM Daniel, we are hoping to create a common library  of data
+accessors to the FHIR with a test harness included with the library
+that has dummy apps sending and receiving data or in your case
+collecting stats.
+
+12:01
+
+Then each group's app code can link to that common library so as to
+ensure the apps are integrated bug free.
+
+12:03
+
+I still think the common library depends on what stack each team ends up using.
+
+
+jbarron30
+
+12:03 PM so then we have all 4 team in this discussion which is what we need.
+
+
+arkaaito
+
+12:04 PM If one has particular strengths in Rails dev while another
+has lots of folks with Node.JS background we would lose more than we
+gain by forcing the same stack.
+
+
+
+12:04
+
+What environment are you guys planning to work in (assuming we're all
+doing web first), or have you not decided yet?
+
+
+
+jbarron30
+
+12:05 PM How would you deal with different stack ? Can we still
+collaborate on the most generic and if some team has their own stack
+they can make a wrapper for their stack?
+
+arkaaito
+
+12:06 PM Hrm, not sure I follow… so e.g. we write the FHIR
+retrieval/storage code in Ruby and wrap it in Ruby->JS, Ruby->PHP…?
+
+
+arkaaito
+
+12:08 PM Regardless of what way we're going for languages and
+frameworks we definitely want to make sure we're on the same page as
+far as what format we use for storing the data in FHIR, but…
+
+
+
+mark
+
+12:10 PM Basically it looks as though it's mainly JQuery
+
+arkaaito 12:10
+
+I’m going to guess that it didn’t like me bookmarking
+https://fhir-dstu2.smarthealthit.org/apps/growth-chart/#state=08c9d321-912b-cb5e-5794-f8f8679da02c
+...
+
+mark
+
+12:11 PM Aly & Paula were quite strongly suggesting that as a good way
+of saving energy
+
+jbarron30
+
+12:16 PM Once we agree what format the patient-facing app enters the
+data it gathers during the interview into the FHIR record, then the
+physician facing app agrees what format it enters the information it
+gathers for the community facing app, we can create the test harnesses
+in several different stacks. If one group like Ruby and one Node.js we
+can create a test harness in each. They would just be dummy stubs
+anyways.
+
+
+
+arkaaito
+
+12:17 PM Correct, we’ll need to agree on FHIR data format whichever way we go.
+
+12:19
+
+So you’re envisioning the physician-facing one as purely browser-based
+JS.  That makes sense.  We can probably do ours the same way in the
+initial phase (though if we opt to migrate to native clients we’ll
+need at least an APNs server).
+
+
+jbarron30
+
+12:38 PM But beyond the data visualization, and getting back to Mark's
+idea this morning on the need for interface specs, I think maybe
+patient and physician team should collaborate on a document specifying
+ the patient-->physician interface, ie which exact to FHIR fields,
+exactly what the formatting is.  Similarly,  physician and community
+team should prepare a second interface document specifying exactly the
+physician --> community interface.  We can submit these to analytics
+team that can insert into each of these two interfaces all the extra
+statistical recording fields they will need to do their job. (edited)
+
+12:40
+
+And then we can actually implement a test harness in one or more
+stacks that the teams decide on, ensuring the interfaces are rock
+solid and information flows are bug-free which will de-risk greatly
+the entire project.
+
+
+jbarron30
+
+12:47 PM Any time investment we make on this at this early stage in
+the project will pay off in the long term with reduced time stress on
+all the teams towards the end of the project I believe.
+
+daniel_hegberg
+
+12:58 PM So at this point, what do you need from the analytics team?
+Are we waiting for other teams will give us what they need and we add
+to it?
+
+arkaaito
+
+1:02 PM I think we could go either direction - we can come up with the
+dataflow design and then you can modify it, or you can figure out what
+you need and we can make sure that goes into our design.
+
+jbarron30
+
+1:15 PM Analytic could write a document right now instead of waiting,
+that would   express exactly what you want to get on your 3
+interfaces,  patient --> analytic,  physician --> analytic, and
+community --> analytic, what  information flows you need in terms of
+FHIR fields. (edited)
+
+
+jbarron30
+
+1:52 PM Are the resources we need to inter-operate our apps supported
+currently or is our first task as super-team to upgrade the GT Server
+so it is minimally functional to support  our CDC project ?
+
+Feb 22
+
+jbarron30 12:51 PM It seems all 4 teams are going to set off in
+different directions and use different stacks, but it should not be a
+problem since  the interface will be through the  FHIR server so all 4
+apps should be compatible with one another.
+
+jbarron30
+
+2:54 PM The customer, the CDC, has specified that the 4 apps must work
+together in a particular way.  For example, your patient facing app
+collects information about the child's lifestyle, exercise  and eating
+habits and then our physician facing app must be able to consume your
+collected data and combine it with the medical BMI data in order to
+conduct an obesity  counseling session with the child.
+
+2:56
+
+It would be really nice to precisely specify what information your app
+will collect and how you will send it to the FHIR server so our app
+can be designed to consume your information.
+
+jbarron30
+
+3:05 PM If we don't know the interface ahead of time  then we will
+have to make assumptions as to how you are going to encode your
+information and then near the end of the semester try to  integrate
+the 4 apps. This may require a great deal of last minute
+time-consuming re-engineering of our code to be able to interoperate
+with  your app or not work very well.  If we can agree ahead of time
+on the information flows between the apps, the lower the  degree of
+risk. (edited)
+
+jbarron30
+
+3:14 PM Ideally,  we can produce an interface specification document
+describing exactly the information flows from patient app -->
+physician app--> community app,  and how all three send data to the
+analytics app.  A functional test harness that simulates the 4 apps in
+stub form but fully implements the interfaces and  data exchanges
+between the apps would be very useful as each team could periodically
+during development insert their real app into the test harness and
+ensure it still is going to interoperate with the others. (edited)
+
+arkaaito
+
+4:23 PM @jbarron: the plan hasn't changed since we discussed it this
+morning.  I will be taking some time in the next couple of days to
+figure out how long it would take to add new resources, and I don't
+think we can make a decision about which resources we (patient-facing)
+will be using before we know that. (edited)

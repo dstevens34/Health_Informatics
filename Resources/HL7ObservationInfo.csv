@@ -1,0 +1,201 @@
+Patient,Observation,Value,Date
+1,Body weight Measured,53.8,2005-06-30T19:45:00-04:00
+1,Body mass index (BMI) [Ratio],21.016,2005-06-30T19:45:00-04:00
+1,Systolic blood pressure,146,2005-06-30T19:45:00-04:00
+1,Diastolic blood pressure,93,2005-06-30T19:45:00-04:00
+1,Blood pressure systolic and diastolic,146/93,2005-06-30T19:45:00-04:00
+1,Heart rate,76,2005-06-30T19:45:00-04:00
+1,Respiratory rate,15,2005-06-30T19:45:00-04:00
+1,Body temperature,37.3,2005-06-30T19:45:00-04:00
+1,Body height,160,2005-10-07T16:15:00-04:00
+1,Body weight Measured,53.8,2005-10-07T16:15:00-04:00
+1,Body mass index (BMI) [Ratio],21.016,2005-10-07T16:15:00-04:00
+1,Systolic blood pressure,146,2005-10-07T16:15:00-04:00
+1,Diastolic blood pressure,93,2005-10-07T16:15:00-04:00
+1,Blood pressure systolic and diastolic,146/93,2005-10-07T16:15:00-04:00
+1,Heart rate,76,2005-10-07T16:15:00-04:00
+1,Respiratory rate,15,2005-10-07T16:15:00-04:00
+2,Body height,173,2005-03-12T04:37:00-05:00
+2,Body weight Measured,91.1,2005-03-12T04:37:00-05:00
+2,Body mass index (BMI) [Ratio],30.439,2005-03-12T04:37:00-05:00
+2,Systolic blood pressure,142,2005-03-12T04:37:00-05:00
+2,Diastolic blood pressure,91,2005-03-12T04:37:00-05:00
+2,Blood pressure systolic and diastolic,142/91,2005-03-12T04:37:00-05:00
+2,Heart rate,92,2005-03-12T04:37:00-05:00
+2,Respiratory rate,14,2005-03-12T04:37:00-05:00
+2,Body temperature,37,2005-03-12T04:37:00-05:00
+2,Body height,173,2005-04-19T15:30:00-04:00
+2,Body weight Measured,93.2,2005-04-19T15:30:00-04:00
+2,Body mass index (BMI) [Ratio],31.14,2005-04-19T15:30:00-04:00
+2,Systolic blood pressure,147,2005-04-19T15:30:00-04:00
+2,Diastolic blood pressure,94,2005-04-19T15:30:00-04:00
+2,Blood pressure systolic and diastolic,147/94,2005-04-19T15:30:00-04:00
+2,Heart rate,93,2005-04-19T15:30:00-04:00
+2,Respiratory rate,16,2005-04-19T15:30:00-04:00
+2,Body temperature,37.1,2005-04-19T15:30:00-04:00
+2,Body height,173,2005-10-20T19:00:00-04:00
+2,Body weight Measured,92.2,2005-10-20T19:00:00-04:00
+2,Body mass index (BMI) [Ratio],30.806,2005-10-20T19:00:00-04:00
+2,Systolic blood pressure,145,2005-10-20T19:00:00-04:00
+2,Diastolic blood pressure,92,2005-10-20T19:00:00-04:00
+2,Blood pressure systolic and diastolic,145/92,2005-10-20T19:00:00-04:00
+2,Heart rate,92,2005-10-20T19:00:00-04:00
+2,Respiratory rate,15,2005-10-20T19:00:00-04:00
+2,Body temperature,37.1,2005-10-20T19:00:00-04:00
+3,Body height,151,2005-08-24T17:30:00-04:00
+3,Body weight Measured,58.6,2005-08-24T17:30:00-04:00
+3,Body mass index (BMI) [Ratio],25.701,2005-08-24T17:30:00-04:00
+3,Systolic blood pressure,110,2005-08-24T17:30:00-04:00
+3,Diastolic blood pressure,70,2005-08-24T17:30:00-04:00
+3,Blood pressure systolic and diastolic,110/70,2005-08-24T17:30:00-04:00
+3,Heart rate,83,2005-08-24T17:30:00-04:00
+3,Respiratory rate,15,2005-08-24T17:30:00-04:00
+3,Body temperature,37.2,2005-08-24T17:30:00-04:00
+3,Body height,151,2005-08-26T17:45:00-04:00
+3,Body weight Measured,59.1,2005-08-26T17:45:00-04:00
+3,Body mass index (BMI) [Ratio],25.92,2005-08-26T17:45:00-04:00
+3,Systolic blood pressure,112,2005-08-26T17:45:00-04:00
+3,Diastolic blood pressure,72,2005-08-26T17:45:00-04:00
+3,Blood pressure systolic and diastolic,112/72,2005-08-26T17:45:00-04:00
+3,Heart rate,84,2005-08-26T17:45:00-04:00
+3,Respiratory rate,16,2005-08-26T17:45:00-04:00
+3,Body temperature,37.3,2005-08-26T17:45:00-04:00
+3,Body height,151,2005-08-31T14:30:00-04:00
+3,Body weight Measured,59.6,2005-08-31T14:30:00-04:00
+3,Body mass index (BMI) [Ratio],26.139,2005-08-31T14:30:00-04:00
+3,Systolic blood pressure,114,2005-08-31T14:30:00-04:00
+3,Diastolic blood pressure,75,2005-08-31T14:30:00-04:00
+3,Blood pressure systolic and diastolic,114/75,2005-08-31T14:30:00-04:00
+3,Heart rate,84,2005-08-31T14:30:00-04:00
+3,Respiratory rate,17,2005-08-31T14:30:00-04:00
+3,Body temperature,37.3,2005-08-31T14:30:00-04:00
+4,Body height,68,2005-02-28T18:00:00-05:00
+4,Body weight Measured,168,2005-02-28T18:00:00-05:00
+4,Body mass index (BMI) [Ratio],26.159,2005-02-28T18:00:00-05:00
+4,Systolic blood pressure,108,2005-02-28T18:00:00-05:00
+4,Blood pressure systolic and diastolic,108/67,2005-02-28T18:00:00-05:00
+4,Heart rate,79,2005-02-28T18:00:00-05:00
+4,Respiratory rate,15,2005-02-28T18:00:00-05:00
+4,Body temperature,98.6,2005-02-28T18:00:00-05:00
+4,Body height,68,2005-10-31T20:45:00-05:00
+4,Body weight Measured,166,2005-10-31T20:45:00-05:00
+4,Body mass index (BMI) [Ratio],25.848,2005-10-31T20:45:00-05:00
+4,Systolic blood pressure,106,2005-10-31T20:45:00-05:00
+4,Diastolic blood pressure,64,2005-10-31T20:45:00-05:00
+4,Blood pressure systolic and diastolic,106/64,2005-10-31T20:45:00-05:00
+4,Respiratory rate,14,2005-10-31T20:45:00-05:00
+4,Body temperature,98.5,2005-10-31T20:45:00-05:00
+4,Body height,68,2005-12-09T16:15:00-05:00
+4,Body weight Measured,168,2005-12-09T16:15:00-05:00
+4,Body mass index (BMI) [Ratio],26.159,2005-12-09T16:15:00-05:00
+4,Systolic blood pressure,108,2005-12-09T16:15:00-05:00
+4,Diastolic blood pressure,66,2005-12-09T16:15:00-05:00
+4,Blood pressure systolic and diastolic,108/66,2005-12-09T16:15:00-05:00
+4,Heart rate,79,2005-12-09T16:15:00-05:00
+4,Respiratory rate,15,2005-12-09T16:15:00-05:00
+4,Body temperature,98.6,2005-12-09T16:15:00-05:00
+4,Body height,68,2005-12-12T19:45:00-05:00
+4,Body weight Measured,166,2005-12-12T19:45:00-05:00
+4,Body mass index (BMI) [Ratio],25.848,2005-12-12T19:45:00-05:00
+4,Systolic blood pressure,106,2005-12-12T19:45:00-05:00
+4,Diastolic blood pressure,64,2005-12-12T19:45:00-05:00
+4,Blood pressure systolic and diastolic,106/64,2005-12-12T19:45:00-05:00
+4,Heart rate,79,2005-12-12T19:45:00-05:00
+4,Respiratory rate,14,2005-12-12T19:45:00-05:00
+4,Body temperature,98.5,2005-12-12T19:45:00-05:00
+5,Body height,180,2005-04-18T18:15:00-04:00
+5,Body weight Measured,84,2005-04-18T18:15:00-04:00
+5,Body mass index (BMI) [Ratio],25.926,2005-04-18T18:15:00-04:00
+5,Systolic blood pressure,145,2005-04-18T18:15:00-04:00
+5,Diastolic blood pressure,93,2005-04-18T18:15:00-04:00
+5,Blood pressure systolic and diastolic,145/93,2005-04-18T18:15:00-04:00
+5,Heart rate,83,2005-04-18T18:15:00-04:00
+5,Respiratory rate,16,2005-04-18T18:15:00-04:00
+5,Body temperature,36.9,2005-04-18T18:15:00-04:00
+5,Body height,180,2005-04-22T15:45:00-04:00
+5,Body weight Measured,84,2005-04-22T15:45:00-04:00
+5,Body mass index (BMI) [Ratio],25.926,2005-04-22T15:45:00-04:00
+5,Systolic blood pressure,109,2005-04-22T15:45:00-04:00
+5,Diastolic blood pressure,69,2005-04-22T15:45:00-04:00
+5,Blood pressure systolic and diastolic,109/69,2005-04-22T15:45:00-04:00
+5,Heart rate,83,2005-04-22T15:45:00-04:00
+5,Respiratory rate,16,2005-04-22T15:45:00-04:00
+5,Body temperature,36.9,2005-04-22T15:45:00-04:00
+5,Body height,180,2005-11-14T20:45:00-05:00
+5,Body weight Measured,82.7,2005-11-14T20:45:00-05:00
+5,Body mass index (BMI) [Ratio],25.525,2005-11-14T20:45:00-05:00
+5,Systolic blood pressure,142,2005-11-14T20:45:00-05:00
+5,Diastolic blood pressure,91,2005-11-14T20:45:00-05:00
+5,Blood pressure systolic and diastolic,142/91,2005-11-14T20:45:00-05:00
+5,Heart rate,83,2005-11-14T20:45:00-05:00
+5,Respiratory rate,15,2005-11-14T20:45:00-05:00
+5,Body temperature,36.8,2005-11-14T20:45:00-05:00
+6,Body height,157,2005-02-14T19:45:00-05:00
+6,Body weight Measured,44.8,2005-02-14T19:45:00-05:00
+6,Body mass index (BMI) [Ratio],18.175,2005-02-14T19:45:00-05:00
+6,Systolic blood pressure,111,2005-02-14T19:45:00-05:00
+6,Diastolic blood pressure,72,2005-02-14T19:45:00-05:00
+6,Blood pressure systolic and diastolic,111/72,2005-02-14T19:45:00-05:00
+6,Heart rate,80,2005-02-14T19:45:00-05:00
+6,Respiratory rate,16,2005-02-14T19:45:00-05:00
+6,Body temperature,37.2,2005-02-14T19:45:00-05:00
+6,Body height,156,2005-09-26T17:00:00-04:00
+6,Body weight Measured,43.4,2005-09-26T17:00:00-04:00
+6,Body mass index (BMI) [Ratio],17.834,2005-09-26T17:00:00-04:00
+6,Systolic blood pressure,104,2005-09-26T17:00:00-04:00
+6,Diastolic blood pressure,63,2005-09-26T17:00:00-04:00
+6,Blood pressure systolic and diastolic,104/63,2005-09-26T17:00:00-04:00
+6,Heart rate,79,2005-09-26T17:00:00-04:00
+6,Respiratory rate,14,2005-09-26T17:00:00-04:00
+6,Body temperature,37.1,2005-09-26T17:00:00-04:00
+6,Body height,157,2005-09-28T13:45:00-04:00
+6,Body weight Measured,44.1,2005-09-28T13:45:00-04:00
+6,Body mass index (BMI) [Ratio],17.891,2005-09-28T13:45:00-04:00
+6,Systolic blood pressure,108,2005-09-28T13:45:00-04:00
+6,Diastolic blood pressure,68,2005-09-28T13:45:00-04:00
+6,Blood pressure systolic and diastolic,108/68,2005-09-28T13:45:00-04:00
+6,Heart rate,80,2005-09-28T13:45:00-04:00
+6,Respiratory rate,15,2005-09-28T13:45:00-04:00
+6,Body temperature,37.1,2005-09-28T13:45:00-04:00
+7,Body height,65,2005-07-11T20:00:00-04:00
+7,Body weight Measured,154,2005-07-11T20:00:00-04:00
+7,Body mass index (BMI) [Ratio],26.244,2005-07-11T20:00:00-04:00
+7,Systolic blood pressure,107,2005-07-11T20:00:00-04:00
+7,Diastolic blood pressure,67,2005-07-11T20:00:00-04:00
+7,Blood pressure systolic and diastolic,107/67,2005-07-11T20:00:00-04:00
+7,Heart rate,72,2005-07-11T20:00:00-04:00
+7,Respiratory rate,15,2005-07-11T20:00:00-04:00
+7,Body temperature,98.2,2005-07-11T20:00:00-04:00
+8,Body height,69,2005-07-21T20:15:00-04:00
+8,Body weight Measured,115,2005-07-21T20:15:00-04:00
+8,Body mass index (BMI) [Ratio],17.391,2005-07-21T20:15:00-04:00
+8,Systolic blood pressure,106,2005-07-21T20:15:00-04:00
+8,Diastolic blood pressure,63,2005-07-21T20:15:00-04:00
+8,Blood pressure systolic and diastolic,106/63,2005-07-21T20:15:00-04:00
+8,Heart rate,80,2005-07-21T20:15:00-04:00
+8,Respiratory rate,14,2005-07-21T20:15:00-04:00
+8,Body temperature,98.5,2005-07-21T20:15:00-04:00
+8,Body height,70,2005-09-13T17:11:00-04:00
+8,Body weight Measured,120,2005-09-13T17:11:00-04:00
+8,Body mass index (BMI) [Ratio],17.633,2005-09-13T17:11:00-04:00
+8,Systolic blood pressure,115,2005-09-13T17:11:00-04:00
+8,Diastolic blood pressure,74,2005-09-13T17:11:00-04:00
+8,Blood pressure systolic and diastolic,115/74,2005-09-13T17:11:00-04:00
+8,Heart rate,81,2005-09-13T17:11:00-04:00
+8,Respiratory rate,17,2005-09-13T17:11:00-04:00
+8,Body temperature,98.9,2005-09-13T17:11:00-04:00
+9,Body height,64,2005-03-16T18:14:00-05:00
+9,Body weight Measured,103,2005-03-16T18:14:00-05:00
+9,Body mass index (BMI) [Ratio],18.105,2005-03-16T18:14:00-05:00
+9,Systolic blood pressure,107,2005-03-16T18:14:00-05:00
+9,Diastolic blood pressure,67,2005-03-16T18:14:00-05:00
+9,Blood pressure systolic and diastolic,107/67,2005-03-16T18:14:00-05:00
+9,Heart rate,78,2005-03-16T18:14:00-05:00
+9,Respiratory rate,15,2005-03-16T18:14:00-05:00
+9,Body temperature,98.1,2005-03-16T18:14:00-05:00
+10,Body height,68,2005-05-09T21:00:00-04:00
+10,Body weight Measured,143,2005-05-09T21:00:00-04:00
+10,Body mass index (BMI) [Ratio],22.266,2005-05-09T21:00:00-04:00
+10,Systolic blood pressure,107,2005-05-09T21:00:00-04:00
+10,Diastolic blood pressure,67,2005-05-09T21:00:00-04:00
+10,Blood pressure systolic and diastolic,107/67,2005-05-09T21:00:00-04:00
